@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+.Juan {
+  text-align: center;
+  color: rgb(255, 60, 0);
+}
+.Mascota {
+  text-align: center;
+  color: rgba(60, 255, 0, 0.705);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
