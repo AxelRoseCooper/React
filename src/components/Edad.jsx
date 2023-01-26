@@ -1,16 +1,33 @@
-import React from "react";
+import React from 'react'
 import '../App.css'
-import PropTypes  from "prop-types";
+import PropTypes from 'prop-types';
 
-export const Edad = ({edad}) =>{
-    return(
-        <> {/*React.Fragment*/}
-            <p className="Juan" style={{display:"none"}}> :::: tengo {edad} años :::::::::</p>
+
+const myStyle = {
+    ocultar:{
+        display: "none"
+    },
+    mostrar:{
+        display: "block",
+        color: "red",
+        backgroundColor: "green"
+
+    } 
+}
+
+export const Edad = ( {edad, show=true} ) => {
+    return (
+        <>{/* React.Fragment */}
+            <p 
+                className='Juan' 
+                style={ show ? myStyle.mostrar: myStyle.ocultar }
+            >
+            === tengo {edad} años ===
+            </p>
         </>
     )
-        
 }
 
 Edad.propTypes = {
     edad: PropTypes.number.isRequired
-}
+};

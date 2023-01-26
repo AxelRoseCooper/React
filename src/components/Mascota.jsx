@@ -1,13 +1,13 @@
-import React from "react";
-import '../App.css'
 import { Edad } from "./Edad";
+import '../App.css';
 
-export const Mascota = ({name,age}) =>{
-    return(
-        <> {/*React.Fragment*/}
-            <h3 className="Mascota">Soy una mascota y me llamo {name} </h3>
-            <Edad edad = {age}/>
-        </>
-    )
-        
+const Mascota = ( {name, age, show}) => {
+  return (
+    <>
+      <h3 className="Mascota">Soy una mascota y me llamo {name}</h3>
+      <Edad edad={age} show={show} />
+    </>
+  )
 }
+
+export default Mascota;
